@@ -14,7 +14,7 @@ namespace ContosoPizza.Pages
 
         public void OnGet()
         {
-
+            ViewData["IsHomePage"] = true;
         }
     }
 }

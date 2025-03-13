@@ -3,6 +3,110 @@
 @{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="card bg-dark">
+    <div class="card-body p-4">
+        <div class="privacy-section mb-4">
+            <h2 class="h4 text-primary"><i class="fas fa-shield-alt me-2"></i>Information We Collect</h2>
+            <p class="text-light-50">When you visit Contoso Pizza, we collect certain information about your device, your interaction with the website, and information necessary to process your purchases.</p>
+        </div>
+
+        <div class="privacy-section mb-4">
+            <h2 class="h4 text-primary"><i class="fas fa-tasks me-2"></i>How We Use Your Information</h2>
+            <ul class="list-group list-group-flush bg-dark">
+                <li class="list-group-item bg-dark text-light border-secondary"><i class="fas fa-check text-primary me-2"></i>To process your orders and provide customer service</li>
+                <li class="list-group-item bg-dark text-light border-secondary"><i class="fas fa-check text-primary me-2"></i>To improve our website and services</li>
+                <li class="list-group-item bg-dark text-light border-secondary"><i class="fas fa-check text-primary me-2"></i>To send promotional emails about new products and special offers</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section mb-4">
+            <h2 class="h4 text-primary"><i class="fas fa-lock me-2"></i>Data Protection</h2>
+            <p class="text-light-50">We implement industry-standard security measures to maintain the safety of your personal information when you place an order or submit your personal information.</p>
+        </div>
+
+        <div class="privacy-section mb-4">
+            <h2 class="h4 text-primary"><i class="fas fa-cookie-bite me-2"></i>Cookies</h2>
+            <p class="text-light-50">We use cookies to help us remember and process the items in your shopping cart, understand and save your preferences for future visits, and compile aggregate data about site traffic.</p>
+        </div>
+
+        <div class="alert alert-dark mt-4 border-secondary">
+            <p class="mb-0"><i class="fas fa-calendar-alt me-2"></i>Last updated: March 2025</p>
+        </div>
+    </div>
+</div>
+
+<style>
+.privacy-section {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.privacy-section:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+.text-light-50 {
+    opacity: 0.9;
+    color: #e0e0e0;
+}
+
+.text-primary {
+    color: #6da1ff !important;
+}
+
+.hero-menu {
+    background-color: #1a1a1a;
+    background-position: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
+    background: #ff6b6b;
+    border-radius: 2px;
+}
+
+.display-3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.lead {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card.bg-dark {
+    background-color: #1a1a1a !important;
+}
+
+.list-group-item {
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.075) !important;
+}
+
+.list-group-item.bg-dark {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.alert-dark {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+}
+</style>

@@ -1,0 +1,82 @@
+@page
+@model TeamModel
+@{
+    ViewData["Title"] = "Our Team";
+}
+
+<div class="container">
+    <div class="text-center mb-5">
+        <h1 class="display-2 mb-3 text-light fw-bolder">Our Team </h1>
+        <p class="lead text-light opacity-75">Crafting Perfect Pizzas with Passion</p>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-lg-8 mx-auto">
+            <div class="card bg-dark text-light">
+                <div class="card-body">
+                    <h2 class="card-title h4 text-center">About Us</h2>
+                    <p class="card-text">
+                        We are a team of highly skilled pizza lovers who are dedicated to making the best pizza in town.
+                        With over 20 years of combined experience, our team brings passion and expertise to every pizza we create.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <h2 class="text-center mb-4">Meet Our Team</h2>
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-utensils fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">John Doe</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Head Chef</h6>
+                    <p class="card-text">Master pizza maker with 15 years of experience in Italian cuisine.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-user-tie fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Jane Doe</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Restaurant Manager</h6>
+                    <p class="card-text">Ensures smooth operations and exceptional customer service.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-utensils fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Sam Smith</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Sous Chef</h6>
+                    <p class="card-text">Specializes in creating unique pizza toppings combinations.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-handshake fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Tom Brown</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Customer Relations</h6>
+                    <p class="card-text">Your go-to person for special orders and events.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.display-2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 900 !important;
+    letter-spacing: -1px;
+}
+
+.lead {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+</style>

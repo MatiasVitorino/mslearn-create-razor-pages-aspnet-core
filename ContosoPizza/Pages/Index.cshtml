@@ -1,10 +1,108 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="welcome-section text-center py-5">
+    <h1 class="display-2 mb-3 text-light fw-bolder">Welcome to ContosoPizza </h1>
+    <p class="lead mb-4 text-light">Crafting perfect pizzas with passion since 2025</p>
+    <div class="d-flex justify-content-center gap-3">
+        <a asp-page="/PizzaList" class="btn btn-primary btn-lg">
+            <i class="fas fa-pizza-slice me-2"></i>View Our Menu
+        </a>
+        <a asp-page="/PizzaAdd" class="btn btn-outline-light btn-lg">
+            <i class="fas fa-plus me-2"></i>Create Your Own
+        </a>
+    </div>
 </div>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-5 text-light">Why Choose Us?</h2>
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="card h-100 pizza-card border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                    <div class="feature-icon bg-primary bg-gradient text-white rounded-circle p-3 mb-4 mx-auto" style="width: 64px; height: 64px;">
+                        <i class="fas fa-pizza-slice fa-2x"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Fresh Ingredients</h3>
+                    <p class="text-muted mb-0">We use only the finest and freshest ingredients, carefully selected to create the perfect pizza experience.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 pizza-card border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                    <div class="feature-icon bg-primary bg-gradient text-white rounded-circle p-3 mb-4 mx-auto" style="width: 64px; height: 64px;">
+                        <i class="fas fa-shipping-fast fa-2x"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Fast Delivery</h3>
+                    <p class="text-muted mb-0">Quick and reliable delivery to your doorstep, ensuring your pizza arrives hot and fresh.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 pizza-card border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                    <div class="feature-icon bg-primary bg-gradient text-white rounded-circle p-3 mb-4 mx-auto" style="width: 64px; height: 64px;">
+                        <i class="fas fa-user-friends fa-2x"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Great Service</h3>
+                    <p class="text-muted mb-0">Our friendly staff is dedicated to providing you with an exceptional dining experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+<style>
+
+
+.welcome-section {
+
+    position: relative;
+    padding: 6rem 0;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.welcome-section h1, 
+.welcome-section p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-section h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 900 !important;
+    letter-spacing: -1px;
+}
+
+.pizza-card {
+    background-color: rgba(33, 37, 41, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: transform 0.2s ease-in-out;
+}
+
+.pizza-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+.btn-primary:hover {
+    background-color: #ff5252;
+    border-color: #ff5252;
+}
+</style>
